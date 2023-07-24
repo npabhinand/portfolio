@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgb(18, 18, 62);
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .project-card {
+            width: 300px;
+            background-color: rgb(18, 18, 62);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .project-description {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .project-tech-stack {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        .link a{
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 2rem;
+            }
+
+            .projects-container {
+                padding: 20px;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Projects
+    </header>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <div class="project-title">RentARoom</div>
+            <div class="project-description">Mobile application to help find rooms near College of Engineering CET.</div>
+            <div class="project-tech-stack">Tech Stack: React Native, Firebase</div>
+            <br>
+            <div class="link"><a href="https://github.com/npabhinand/RentARoom">code</a></div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">RentARoom</div>
+            <div class="project-description">Web application to help find rooms near College of Engineering CET.</div>
+            <div class="project-tech-stack">Tech Stack: MERN (MongoDB, Express.js, React, Node.js)</div>
+            <div class="link"><a href="https://github.com/npabhinand/RentAroom-using-MERN-stack">code</a></div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Maxx-bot</div>
+            <div class="project-description">Chatbot to help students with their mental health.</div>
+            <div class="project-tech-stack">Tech Stack: React Native, Firebase, Dialogflow</div>
+            <br>
+            <div class="link"><a href="https://github.com/npabhinand/maxx-bot">code</a></div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Online Auction System</div>
+            <div class="project-description">Auction system where users can create auctions and bid.</div>
+            <div class="project-tech-stack">Tech Stack: MERN (MongoDB, Express.js, React, Node.js)</div>
+            <div class="link"><a href="https://github.com/npabhinand/Online-auction-system">code</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
