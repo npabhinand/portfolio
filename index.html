@@ -1,451 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinand Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinand Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 62);
-        }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
 
-        nav ul li a:hover {
-            color: rgb(153, 153, 226);
-            font-size: 1.01rem;
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
 
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 40px 84px;
-        }
+    nav ul li a:hover {
+      color: rgb(153, 153, 226);
+      font-size: 1.01rem;
+    }
 
-        .left {
-            font-size: 1.5rem;
-        }
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
 
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 110px 0;
-        }
+    .left {
+      font-size: 1.5rem;
+    }
 
-        .firstSection>div {
-            width: 30%;
-        }
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 110px 0;
+    }
 
-        .leftSection {
-            font-size: 2.5rem;
-        }
+    .firstSection > div {
+      width: 30%;
+    }
 
-        .leftSection .buttons {
-            padding: 50px 0;
-        }
+    .leftSection {
+      font-size: 2.5rem;
+    }
 
-        .leftSection .btn {
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
+    .leftSection .buttons {
+      padding: 50px 0;
+    }
 
-        }
+    .leftSection .btn {
+      padding: 12px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+    }
 
-        .leftSection .btn a {
-            text-decoration: none;
-            color: white;
-        }
+    .leftSection .btn a {
+      text-decoration: none;
+      color: white;
+    }
 
-        .rightSection img {
-            width: 80%;
-        }
+    .rightSection img {
+      width: 80%;
+    }
 
-        .purple {
-            color: rgb(170, 107, 228);
-        }
+    .purple {
+      color: rgb(170, 107, 228);
+    }
 
-        .text-gray {
-            color: gray;
-        }
+    .text-gray {
+      color: gray;
+    }
 
-        #element {
-            color: rgb(170, 107, 228);
-        }
+    #element {
+      color: rgb(170, 107, 228);
+    }
 
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
 
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
 
-        .secondSection .box {
-            background: white;
-            width: 76vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
+    .secondSection .box {
+      background: white;
+      width: 76vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
 
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 140px;
-        }
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 140px;
+    }
 
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
+    .image-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
 
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 14px;
-        }
+    .vertical-title {
+      position: relative;
+      top: 75px;
+      width: 150px;
+      font-size: 14px;
+    }
 
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
+    .vertical-desc {
+      position: relative;
+      top: 86px;
+      color: gray;
+      width: 150px;
+      font-size: 9px;
+    }
 
-        footer {
-            background-color: #0e0e1a;
-            height: 233px;
-        }
+    footer {
+      background-color: #0e0e1a;
+      height: 233px;
+    }
 
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
 
-        .footer ul {
-            list-style: none;
-        }
+    .footer ul {
+      list-style: none;
+    }
 
-        .footer>div {
-            width: 123px;
-        }
+    .footer > div {
+      width: 123px;
+    }
 
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
+    footer .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+    }
 
-        /* Responsive styles for screens smaller than 768px (e.g., mobile devices) */
-        @media (max-width: 768px) {
-            .firstSection {
-                flex-direction: column;
-            }
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .firstSection {
+        flex-direction: column;
+      }
 
-            .leftSection,
-            .rightSection {
-                width: 100%;
-                text-align: center;
-            }
+      .leftSection,
+      .rightSection {
+        width: 100%;
+        text-align: center;
+      }
 
-            .rightSection img {
-                width: 100%;
-            }
+      .rightSection img {
+        width: 100%;
+      }
 
-            .leftSection .buttons {
-                padding: 30px 0;
-            }
+      .leftSection .buttons {
+        padding: 30px 0;
+      }
 
-            .leftSection .btn {
-                font-size: 16px;
-            }
+      .leftSection .btn {
+        font-size: 16px;
+      }
 
-            .secondSection .box {
-                width: 95vw;
-            }
+      nav .menu-btn,
+      nav .close-btn {
+        display: none;
+        background: rgb(18, 18, 62);
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+      }
 
-            .footer {
-                flex-direction: column;
-                align-items: center;
-            }
+      nav .menu-btn {
+        display: block;
+      }
 
-            .footer>div {
-                margin-bottom: 20px;
-            }
+      nav .close-btn {
+        display: none;
+      }
 
-            .footer h3 {
-                margin-bottom: 20px;
-            }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        height: 100%;
+        width: 60%;
+        background-color: rgb(18, 18, 62);
+        z-index: 1;
+      }
 
-            .footer ul {
-                text-align: center;
-            }
-        }
+      nav ul.show {
+        display: flex;
+        top: -150px;
+      }
 
-        /* Responsive styles for screens smaller than 1200px */
-        @media (max-width: 1200px) {
-            .firstSection {
-                margin: 80px 0;
-            }
+      nav ul li {
+        padding: 5px;
+      }
 
-            .firstSection>div {
-                width: 100%;
-                text-align: center;
-            }
+      .close-btn {
+        display: none;
+      }
 
-            .leftSection .buttons {
-                padding: 40px 0;
-            }
+      nav ul.show + .close-btn {
+        display: block;
+      }
+    }
 
-            .leftSection .btn {
-                font-size: 16px;
-            }
+    /* Tablet Styles */
+    @media (max-width: 1200px) {
+      .firstSection {
+        margin: 80px 0;
+      }
 
-            .secondSection .box {
-                width: 90vw;
-            }
-        }
+      .firstSection > div {
+        width: 100%;
+        text-align: center;
+      }
 
-        /* Responsive styles for screens smaller than 500px */
-        @media (max-width: 500px) {
-            .firstSection {
-                margin: 50px 0;
-            }
+      .leftSection .buttons {
+        padding: 40px 0;
+      }
 
-            .firstSection>div {
-                width: 100%;
-                text-align: center;
-            }
+      .leftSection .btn {
+        font-size: 16px;
+      }
 
-            .leftSection .buttons {
-                padding: 25px 0;
-            }
+      .secondSection .box {
+        width: 90vw;
+      }
+    }
 
-            .leftSection .btn {
-                font-size: 14px;
-            }
+    /* Mobile Styles */
+    @media (max-width: 500px) {
+      .firstSection {
+        margin: 50px 0;
+      }
 
-            .secondSection .box {
-                width: 85vw;
-            }
+      .firstSection > div {
+        width: 100%;
+        text-align: center;
+      }
 
-            nav ul li {
-                margin: 0 10px;
-            }
+      .leftSection .buttons {
+        padding: 25px 0;
+      }
 
-            .secondSection .vertical {
-                margin: 0 60px;
-            }
+      .leftSection .btn {
+        font-size: 14px;
+      }
 
-            .vertical-title,
-            .vertical-desc {
-                width: 100%;
-                text-align: center;
-            }
+      .secondSection .box {
+        width: 85vw;
+      }
 
-            .footer {
-                flex-wrap: wrap;
-            }
+      nav ul li {
+        margin: 0 10px;
+      }
 
-            .footer>div {
-                margin-bottom: 20px;
-            }
+      .secondSection .vertical {
+        margin: 0 60px;
+      }
 
-            .footer h3 {
-                font-size: 1.2rem;
-            }
+      .vertical-title,
+      .vertical-desc {
+        width: 100%;
+        text-align: center;
+      }
 
-            footer .footer-rights {
-                padding: 6px 0;
-            }
-        }
-    </style>
+      .footer {
+        flex-wrap: wrap;
+      }
+
+      .footer > div {
+        margin-bottom: 20px;
+      }
+
+      .footer h3 {
+        font-size: 1.2rem;
+      }
+
+      footer .footer-rights {
+        padding: 6px 0;
+      }
+    }
+
+    /* Desktop Styles */
+    @media (min-width: 769px) {
+      nav .menu-btn,
+      nav .close-btn {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Abhinand's portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./tools.html">Tools</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is ,<span class="purple">Abhinand Narayanan</span>
-                <div>and I am a passionate</div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <button class="btn"><a
-                            href="https://drive.google.com/file/d/1lN0dbCzdv_j11o7rmtzeXquoSikxxKQy/view?usp=drivesdk">
-                            Download Resume</a></button>
-                    <button class="btn"><a href="https://github.com/npabhinand">Visit Github</a></button>
-                </div>
-
-            </div>
-            <div class="rightSection">
-                <img src="software-development.png" alt="Failed to load" />
-            </div>
-        </section>
-        <hr>
-        <section class="secondSection">
-            <span class="text-gray">What I have done so far</span>
-            <h1>Works </h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="dev.png" alt="">
-                    <div class="vertical-title">
-                        FaceSense Attendance
-                    </div>
-
-                    <div class="vertical-desc">
-                        The FaceSense Attendance project is an innovative and efficient system that
-                        revolutionises the traditional attendance tracking process using advanced face
-                        recognition technology developed using Android, Python and SQL database.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="dev.png" alt="">
-                    <div class="vertical-title">
-                        ReantARoom
-                    </div>
-
-                    <div class="vertical-desc">
-                        RentARoom is a web and android application designed to help students in finding
-                        suitable accommodation near the College of Engineering Trivandrum (CET).
-
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="dev.png" alt="">
-                    <div class="vertical-title">
-                        Maxx-bot
-                    </div>
-
-                    <div class="vertical-desc">
-                        Developed with the aim of fostering a supportive environment, this React Native app offers a user-friendly chatbot 
-                        interface for students to engage in meaningful conversations and seek assistance for their mental health concerns, 
-                        utilizing DialogFlow and Firebase.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="dev.png" alt="">
-                    <div class="vertical-title">
-                        ONLINE AUCTION SYSTEM
-                    </div>
-
-                    <div class="vertical-desc">
-                        A dynamic and user-friendly web app revolutionizing the auction process, leveraging the MERN stack for convenient 
-                        and secure virtual auctions, providing an immersive experience for participants.
-                    </div>
-                </div>
-
-
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-            </div>
-
-
-        </section>
-
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-first"></div>
-            <h3>Abhinand's Developer Portfolio</h3>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-
-                </ul>
-            </div>
-            <!-- <div class="footer-third">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div> -->
+  <header>
+    <nav>
+      <button class="menu-btn">&#9776;</button>
+     
+      <div class="left">Abhinand's portfolio</div>
+      <div class="right">
+        <ul>
+          <li> <button class="close-btn">   &times;</button></li>
+          <li><a href="">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./tools.html">Tools</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Abhinand Narayanan</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">
+            <a
+              href="https://drive.google.com/file/d/11oorfxd5hA_rY7vjyHEtRq-XtRqPT7Od/view?usp=drive_link"
+            >
+              Download Resume</a
+            >
+          </button>
+          <button class="btn">
+            <a href="https://github.com/npabhinand">Visit Github</a>
+          </button>
         </div>
-        <div class="footer-rights">
-            copyright &#169; npabhinand.netlify.app/ | All rights reserved
-        </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Software Developer'],
-            typeSpeed: 50,
-        });
-    </script>
+      </div>
+      <div class="rightSection">
+        <img src="software-development.png" alt="Failed to load" />
+      </div>
+    </section>
+    <hr />
+  </main>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "Software Developer"],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var menuBtn = document.querySelector(".menu-btn");
+      var closeBtn = document.querySelector(".close-btn");
+      var navLinks = document.querySelector("nav ul");
+
+      menuBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+        menuBtn.style.display = "none";
+        closeBtn.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", function () {
+        navLinks.classList.remove("show");
+        menuBtn.style.display = "block";
+        closeBtn.style.display = "none";
+      });
+
+      // Add this event listener to handle window resize
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+          navLinks.classList.remove("show");
+          menuBtn.style.display = "none";
+          closeBtn.style.display = "none";
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
